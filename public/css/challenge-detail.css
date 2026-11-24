@@ -1,0 +1,136 @@
+.challenge-detail-page .challenge-main {
+    padding-top: 1.75rem;
+}
+
+.challenge-back-link {
+    display: inline-block;
+    margin: 0 0 1.4rem;
+    color: #bcbcbc;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.challenge-back-link:hover,
+.challenge-back-link:focus-visible {
+    color: #5cdd79;
+}
+
+.challenge-detail-page .challenge-hero {
+    min-height: 215px;
+}
+
+.challenge-detail-page .challenge-hero h1 {
+    overflow-wrap: anywhere;
+}
+
+.challenge-detail-panel {
+    background: #0c0f0d;
+    border: 1px solid #347d48;
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1.75rem;
+    padding: 1.25rem clamp(1.3rem, 3.4vw, 3rem);
+    border-bottom: 1px solid #444;
+    color: #bfbfbf;
+}
+
+.challenge-detail-meta strong {
+    color: #e5e5e5;
+}
+
+.challenge-detail-points {
+    color: #5cdd79;
+    font-weight: 700;
+}
+
+.challenge-detail-content,
+.challenge-detail-submit {
+    padding: clamp(1.4rem, 3.4vw, 3rem);
+}
+
+.challenge-detail-content h2,
+.challenge-detail-submit h2 {
+    color: #26bd50;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+    line-height: 1.15;
+    margin-bottom: 0.8rem;
+}
+
+.challenge-detail-content {
+    border-bottom: 1px solid #444;
+}
+
+.challenge-detail-description {
+    color: #d4d4d4;
+    font-size: 1.04rem;
+    line-height: 1.8;
+    margin: 0;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.challenge-detail-submit > p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-detail-page .form-label {
+    color: #dcdcdc;
+    font-weight: 700;
+}
+
+.challenge-flag-input {
+    background: #050806;
+    border: 1px solid #4f7055;
+    color: #e1f5e5;
+    border-radius: 3px;
+    font-family: Consolas, 'Courier New', monospace;
+    padding: 0.85rem 1rem;
+}
+
+.challenge-flag-input::placeholder {
+    color: #919b94;
+    opacity: 1;
+}
+
+.challenge-flag-input:focus {
+    background: #050806;
+    color: #fff;
+    border-color: #5cdd79;
+    box-shadow: 0 0 0 0.2rem rgba(38, 189, 80, 0.18);
+}
+
+.challenge-detail-page .challenge-detail-button {
+    display: inline-block;
+    background: #26bd50;
+    border: 1px solid #26bd50;
+    border-radius: 3px;
+    color: #070907;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+}
+
+.challenge-detail-page .challenge-detail-button:hover,
+.challenge-detail-page .challenge-detail-button:focus-visible {
+    background: #58df7c;
+    border-color: #58df7c;
+    color: #050805;
+}
+
+@media (max-width: 700px) {
+    .challenge-detail-page .challenge-main { padding-top: 1rem; }
+    .challenge-detail-meta { gap: 0.6rem 1rem; }
+    .challenge-detail-page .challenge-hero { min-height: 180px; }
+    .challenge-detail-page .challenge-detail-button { width: 100%; }
+}
