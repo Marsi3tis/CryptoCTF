@@ -1,0 +1,264 @@
+.challenges-page {
+    background: #000 !important;
+    color: #dadada;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.challenges-page header .navbar {
+    background: #000 !important;
+    padding: 0;
+    border-bottom: 2px solid #777;
+}
+
+.challenges-page header .navbar > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+.challenges-page header .navbar-brand {
+    display: block;
+    margin: 0;
+    padding: 0.15em 12px 0.12em;
+    color: #26bd50 !important;
+    font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+    font-size: clamp(3rem, 7vw, 7.2rem);
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.015em;
+    white-space: normal;
+}
+
+.challenges-page header .navbar-toggler {
+    display: none !important;
+}
+
+.challenges-page header .navbar-collapse {
+    display: block !important;
+    width: 100%;
+    flex-basis: auto;
+    flex-grow: 0;
+    border-top: 2px solid #777;
+    padding: 0.05rem 1rem 0.3rem;
+    text-align: center;
+}
+
+.challenges-page header .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 6vw, 6rem);
+    padding: 0;
+    margin: 0 !important;
+    list-style: none;
+}
+
+.challenges-page header .navbar-nav .nav-link {
+    display: block;
+    padding: 0 0.35rem;
+    color: #929292 !important;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-size: clamp(1.8rem, 3.7vw, 4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    text-decoration: none;
+}
+
+.challenges-page header .navbar-nav .nav-link:hover,
+.challenges-page header .navbar-nav .nav-link:focus-visible,
+.challenges-page header .navbar-nav .nav-link[aria-current="page"] {
+    color: #26bd50 !important;
+}
+
+/* Puslapio turinys */
+.challenge-main {
+    padding-top: 2rem;
+    padding-bottom: 3.75rem;
+}
+
+.challenge-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(160px, 0.6fr);
+    background: #080b09;
+    border: 1px solid #444;
+    min-height: 225px;
+    overflow: hidden;
+}
+
+.challenge-hero-copy {
+    padding: clamp(1.3rem, 3.4vw, 3.5rem);
+    align-self: center;
+}
+
+.challenge-eyebrow {
+    color: #26bd50;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.19em;
+    margin-bottom: 0.45rem;
+}
+
+.challenge-hero h1 {
+    color: #26bd50;
+    font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+    font-weight: 400;
+    font-size: clamp(2.2rem, 5vw, 4.6rem);
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+}
+
+.challenge-hero-copy > p:last-child {
+    color: #c4c4c4;
+    font-size: clamp(1rem, 1.4vw, 1.18rem);
+    max-width: 38ch;
+    margin: 0;
+    line-height: 1.65;
+}
+
+.challenge-hero-art {
+    background-image: linear-gradient(to right, #080b09 0%, rgba(8,11,9,0.12) 70%), url('/images/cat-hood.jpg');
+    background-position: center, center 34%;
+    background-size: cover;
+    min-height: 225px;
+}
+
+.challenge-list { margin-top: 2.65rem; }
+.challenge-section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    border-bottom: 1px solid #555;
+    margin-bottom: 1.5rem;
+}
+
+.challenge-section-heading h2 {
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: #bdbdbd;
+    margin-bottom: 0.45rem;
+}
+.challenge-section-heading p {
+    color: #a9a9a9;
+    margin: 0;
+    padding-bottom: 0.8rem;
+}
+
+/* Uzdaviniu korteles */
+.challenges-page .challenge-card {
+    background: #0c0f0d !important;
+    border: 1px solid #347d48 !important;
+    border-radius: 4px;
+    color: #d7d7d7;
+    transition: transform 170ms ease, border-color 170ms ease;
+}
+.challenges-page .challenge-card:hover {
+    transform: translateY(-4px);
+    border-color: #26bd50 !important;
+}
+.challenge-card .card-body { padding: clamp(1.25rem, 2vw, 1.75rem); }
+.challenge-card-kicker {
+    color: #75bc85;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.85rem;
+}
+.challenge-card-title {
+    color: #26bd50;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-size: clamp(2rem, 2.7vw, 2.7rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+}
+.challenge-card-description {
+    color: #c7c7c7;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+}
+.challenge-card-meta {
+    border-top: 1px solid #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    color: #bebebe;
+    font-size: 0.88rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.challenge-points {
+    color: #5cdd79;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.challenges-page .challenge-button {
+    background: #26bd50;
+    border: 1px solid #26bd50;
+    border-radius: 3px;
+    color: #070907;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+}
+.challenges-page .challenge-button:hover,
+.challenges-page .challenge-button:focus-visible {
+    background: #58df7c;
+    border-color: #58df7c;
+    color: #050805;
+}
+.challenge-empty { padding: 1.5rem; border: 1px dashed #555; color: #bbb; }
+
+.challenges-page a:focus-visible {
+    outline: 3px solid #73f39a;
+    outline-offset: 3px;
+}
+
+/* Poraste – tas pats stilius kaip pradiniame puslapyje. */
+.challenges-page footer {
+    background: #000 !important;
+    border-top: 2px solid #777;
+    margin-top: 0 !important;
+    padding: 0.75rem 1rem 1.4rem !important;
+    text-align: center;
+}
+.challenges-page footer p {
+    color: #969696 !important;
+    font-family: 'Caveat', 'Comic Sans MS', cursive;
+    font-size: clamp(1.6rem, 3.2vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0.08em 0 !important;
+}
+.challenges-page footer p.small {
+    font-size: clamp(1.3rem, 2.5vw, 2.7rem);
+}
+
+@media (max-width: 700px) {
+    .challenges-page header .navbar-brand {
+        font-size: clamp(2.8rem, 12vw, 5rem);
+    }
+    .challenges-page header .navbar-nav { gap: 1.2rem; }
+    .challenges-page header .navbar-nav .nav-link {
+        font-size: clamp(1.75rem, 7vw, 2.8rem);
+    }
+    .challenge-main { padding-top: 1.25rem; }
+    .challenge-hero { grid-template-columns: 1fr; }
+    .challenge-hero-art { display: none; }
+    .challenge-list { margin-top: 2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .challenges-page .challenge-card { transition: none; }
+}
